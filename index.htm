@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Where is my Pasty?</title>
+
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+        html {
+            height: 100%
+        }
+
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0
+        }
+
+        #map {
+            height: 100%
+        }
+    </style>
+    <script src="http://maps.googleapis.com/maps/api/js?libraries=geometry"></script>
+    <script src="gr.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.21/jquery.csv.min.js"
+        integrity="sha512-Y8iWYJDo6HiTo5xtml1g4QqHtl/PO1w+dmUpQfQSOTqKNsMhExfyPN2ncNAe9JuJUSKzwK/b6oaNPop4MXzkwg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+
+
+        function initialize() {
+            //Load our shop CSV
+            $.ajax({
+                url: "fhrs-greggs-latest.csv",
+                async: false,
+                success: function (csvd) {
+                    parsed = $.csv.toArrays(csvd)
+                },
+                dataType: "text",
+                complete: function () {
+                    //console.log("done")
+                }
+            });
+
+            //Data Parse
+            var path = [];
+            parsed.forEach((parsed) => {
+                if (parsed[0] != 'id') {
+                    path.push(new google.maps.LatLng(parseFloat(parsed[3]), parseFloat(parsed[4])));
+                }
+            })
+            //New Map
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 7,
+                center: { lat: 52.0, lng: -1.0 },
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            });
+            mx = 0;
+            my = 0;
+            star = [];
+            tt = []
+
+            function getTop10(latx, lngy) {
+                dist = [];
+                //calculate the distance for all
+                parsed.forEach(element => {
+                    dist.push([element[0], calcDist(element[3], element[4], latx, lngy)])
+                })
+
+                ttd = topTen(dist);
+                result = [];
+                parsed.forEach(element => {
+                    ttd.forEach(ttdelement => {
+                        if (element[0] == ttdelement[0]) {
+                            result.push(element)
+                        }
+                    });
+                });
+                return result
+            }
+
+            google.maps.event.addListener(map, 'mousedown', function (event) {
+                //cacl distance
+                tt = getTop10(parseFloat(event.latLng.lat()), parseFloat(event.latLng.lng()));
+                //Debug
+                displayCoordinates(event.latLng);
+                console.log(tt)
+                //Clear previous
+                star.forEach(element => {
+                    element.setMap(null)
+                });
+                //Make a line from mouse to first 19
+                tt.forEach((tt) => {
+                    mpath = [];
+                    mpath.push(new google.maps.LatLng(parseFloat(tt[3]), parseFloat(tt[4])));
+                    mpath.push(new google.maps.LatLng(parseFloat(event.latLng.lat()), parseFloat(event.latLng.lng())));
+                    var line = new google.maps.Polyline({
+                        path: mpath,
+                        strokeColor: "#0000FF",
+                        strokeOpacity: 1.0,
+                        strokeWeight: 2,
+                        geodesic: true,
+                        map: map
+                    });
+                    star.push(line)
+                });
+
+            });
+
+            function displayCoordinates(pnt) {
+                var mx = pnt.lat();
+                var my = pnt.lng();
+                console.log("Latitude: " + parseFloat(mx) + "  Longitude: " + my);
+            }
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+
+<body>
+    <div id="map"></div>
+</body>
+
+</html>
