@@ -1,6 +1,6 @@
 id,name,postcode,lat,lng,geosrc
 263977,"Acorn Greggs","SN7 7BP",51.652187,-1.583158,fhrs
-1401195,"Applegreen Biggleswade Greggs","SG18 8PL",0.000000,0.000000,fhrs
+1401195,"Applegreen Biggleswade Greggs","SG18 8PL",52.075903, -0.246075,fhrs
 1411255,"Applegreen camberwell greggs","SE5 0EG",51.481766,-0.094999,fhrs
 1262730,"Applegreen Hedon - Greggs","HU12 8DJ",53.740833,-0.213800,fhrs
 1066335,"Bangor Service Station Greggs/ Subway","LL57 4BG",53.206161,-4.106542,fhrs
@@ -64,7 +64,6 @@ id,name,postcode,lat,lng,geosrc
 932430,Greggs,"ME2 4AR",51.395538,0.495978,fhrs
 600799,Greggs,"B2 5AL",52.480484,-1.897710,fhrs
 226693,Greggs,"WF16 0EZ",53.706989,-1.675107,fhrs
-197308,Greggs,,0.000000,0.000000,fhrs
 707539,Greggs,"B90 3GG",52.412956,-1.828634,fhrs
 489023,Greggs,"HR9 7EA",51.915207,-2.583026,fhrs
 1008087,Greggs,"PO1 1HG",50.801559,-1.088308,fhrs
@@ -390,7 +389,6 @@ id,name,postcode,lat,lng,geosrc
 785560,Greggs,"E6 1HZ",51.536217,0.051929,fhrs
 1215422,Greggs,"AL4 9RB",51.764168,-0.306902,fhrs
 1062463,Greggs,"NG17 1BN",53.124947,-1.262190,fhrs
-866217,Greggs,,0.000000,0.000000,fhrs
 1400399,Greggs,"NG9 3PL",52.961891,-1.264936,onspd
 245488,Greggs,"YO31 7UL",53.956753,-1.069877,fhrs
 326552,Greggs,"BD4 6SG",53.759819,-1.739589,fhrs
@@ -519,7 +517,6 @@ id,name,postcode,lat,lng,geosrc
 1089414,Greggs,"DN4 5AJ",53.515038,-1.128679,fhrs
 434255,Greggs,"DN11 0TS",53.478325,-1.077793,fhrs
 933101,Greggs,"S64 9AS",53.493484,-1.289062,fhrs
-1422577,Greggs,,0.000000,0.000000,fhrs
 611624,Greggs,"CO15 1TD",51.789284,1.152908,fhrs
 4832,Greggs,"CR0 6RD",51.380775,-0.072438,fhrs
 996595,Greggs,"NP11 4EZ",51.664860,-3.144681,fhrs
@@ -1279,7 +1276,6 @@ id,name,postcode,lat,lng,geosrc
 1214928,Greggs,"LL13 9QS",53.038834,-2.927504,fhrs
 574860,Greggs,"BN11 3BP",50.809933,-0.375038,fhrs
 574665,Greggs,"BN11 1BJ",50.812019,-0.370097,fhrs
-850000,Greggs,,0.000000,0.000000,fhrs
 1492703,Greggs,"S80 1JQ",53.304871,-1.124723,fhrs
 1300961,Greggs,"NR16 2JU",52.472080,0.953084,fhrs
 422789,Greggs,"N22 6DS",51.596024,-0.109541,fhrs
@@ -1373,7 +1369,6 @@ id,name,postcode,lat,lng,geosrc
 352002,Greggs,"BN16 3DJ",50.810768,-0.507201,fhrs
 662144,Greggs,"EH4 4QR",55.971043,-3.252653,fhrs
 22447,Greggs,,56.117012,-3.936696,fhrs
-1053536,Greggs,,0.000000,0.000000,fhrs
 29317,Greggs,,56.110027,-3.916177,fhrs
 635161,Greggs,"G62 6PB",55.941574,-4.317829,fhrs
 1086236,Greggs,"EH52 5BQ",55.935188,-3.446508,fhrs
@@ -1388,7 +1383,6 @@ id,name,postcode,lat,lng,geosrc
 549587,Greggs,"FK3 8AZ",56.018970,-3.722766,fhrs
 549986,Greggs,"FK4 1AA",56.000980,-3.887145,fhrs
 666321,Greggs,,55.121326,-3.355684,fhrs
-1429489,Greggs,,0.000000,0.000000,fhrs
 941583,Greggs,"PH2 8PA",56.395035,-3.430756,fhrs
 938011,Greggs,"PH1 5EJ",56.396191,-3.432743,fhrs
 627023,Greggs,"AB39 2BA",56.964504,-2.208743,fhrs
@@ -1471,7 +1465,6 @@ id,name,postcode,lat,lng,geosrc
 614862,Greggs,"ML2 7AU",55.775093,-3.922528,fhrs
 614868,Greggs,"ML1 1LY",55.790894,-3.991226,fhrs
 1291516,Greggs,"G67 1JW",55.945919,-3.989765,fhrs
-926429,Greggs,,0.000000,0.000000,fhrs
 1375050,Greggs,"KA8 8HD",55.467945,-4.628580,fhrs
 28517,Greggs,"KA7 1RB",55.460354,-4.628833,fhrs
 44110,Greggs,"KA9 1JS",55.499664,-4.610536,fhrs
@@ -1532,7 +1525,7 @@ id,name,postcode,lat,lng,geosrc
 1257194,Greggs,"TS3 7PA",54.562096,-1.205374,fhrs
 1297136,Greggs,"NE8 4BQ",54.951118,-1.595723,fhrs
 1372116,Greggs,"NE10 0QU",54.953770,-1.544156,fhrs
-600542,Greggs,"B34 7AG",0.000000,0.000000,fhrs
+600542,Greggs,"B34 7AG",52.495350, -1.776970,fhrs
 1196932,Greggs,"LS25 2EB",53.797268,-1.377483,fhrs
 1377525,Greggs,"LS19 7TZ",53.869347,-1.660469,fhrs
 1373130,Greggs,"DE22 3FW",52.926922,-1.497738,fhrs
@@ -1542,7 +1535,6 @@ id,name,postcode,lat,lng,geosrc
 1349909,Greggs,"ME4 4HP",51.383705,0.525565,fhrs
 1342102,GREGGS,"AB22 8UR",57.191448,-2.121636,fhrs
 1439621,Greggs,"ST3 2JB",52.989956,-2.139602,onspd
-1403778,Greggs,,0.000000,0.000000,fhrs
 948441,Greggs,"G40 1NE",55.849621,-4.227375,fhrs
 1299244,Greggs,"G14 0YU",55.886162,-4.359220,fhrs
 1350232,Greggs,"G51 3AD",55.853355,-4.318788,fhrs
@@ -1732,7 +1724,6 @@ id,name,postcode,lat,lng,geosrc
 855166,"Greggs in Forecourt","TW5 9NB",51.486584,-0.396118,fhrs
 1258118,"Greggs In Forecourt - Northbound","WV11 2AT",52.642574,-2.054823,fhrs
 950687,"Greggs in Forecourt, Heston East","TW5 9NA",51.488556,-0.387882,fhrs
-249585,"Greggs Kiosk",,0.000000,0.000000,fhrs
 1301206,"Greggs Kirkcaldy Shell Garage","KY2 5DS",56.126793,-3.171612,fhrs
 1202678,"Greggs Lawnswood","LS16 8AA",53.848125,-1.591515,fhrs
 1243941,"Greggs Liverpool Shopping Park","L13 1FA",53.409409,-2.923766,fhrs
@@ -1900,7 +1891,6 @@ id,name,postcode,lat,lng,geosrc
 928452,"Greggs PLC","BH2 5RH",50.720440,-1.883104,fhrs
 1372078,"Greggs PLC","B24 9FP",52.508938,-1.823262,fhrs
 429383,"Greggs Plc","WD6 1AH",51.656902,-0.274028,fhrs
-252935,"Greggs Plc",,0.000000,0.000000,fhrs
 347977,"Greggs Plc","HX1 1DL",53.722126,-1.859875,fhrs
 1114214,"Greggs plc","IP33 1DY",52.246201,0.711718,fhrs
 591094,"Greggs PLC","S1 4PF",53.376595,-1.472564,fhrs
@@ -1949,7 +1939,7 @@ id,name,postcode,lat,lng,geosrc
 1417409,"Greggs PLC","PE11 3JZ",52.809513,-0.140627,onspd
 1370017,"Greggs PLC","SA5 8LG",51.635986,-3.970333,fhrs
 171203,"Greggs Plc","BA16 0EN",51.126331,-2.741061,fhrs
-1450080,"GREGGS PLC","N1 9AP",0.000000,0.000000,fhrs
+1450080,"GREGGS PLC","N1 9AP",51.532380, -0.123297,fhrs
 1419329,"Greggs PLC","N4 1ED",51.575855,-0.097279,fhrs
 60152,"Greggs Plc","BS35 2BH",51.608128,-2.525285,fhrs
 1419710,"Greggs PLC","NG9 2JQ",52.927315,-1.214952,fhrs
@@ -1987,7 +1977,6 @@ id,name,postcode,lat,lng,geosrc
 876157,"Greggs PLC",,54.987171,-3.260343,fhrs
 938004,"Greggs PLC","PH1 5XA",56.399792,-3.442649,fhrs
 440683,"Greggs PLC","PH1 3TW",56.417896,-3.475610,fhrs
-1015712,"Greggs PLC",,0.000000,0.000000,fhrs
 678850,"Greggs PLC","G72 8PE",55.809273,-4.178404,fhrs
 678729,"Greggs PLC","G74 5QD",55.760475,-4.228106,fhrs
 1193440,"Greggs PLC","G74 4UN",55.784252,-4.168554,fhrs
@@ -2113,7 +2102,7 @@ id,name,postcode,lat,lng,geosrc
 1199799,"Milnrow Greggs","OL12 0EP",53.623611,-2.149927,fhrs
 742101,"Morrisons Daily, Subway & Greggs T/A HKS Sandringham","LE4 7PB",52.660469,-1.114463,fhrs
 566348,"Moto Petrol Station Inc Greggs (Northbound)","NG9 3QQ",52.957447,-1.263361,onspd
-566436,"Moto Petrol Station Including Greggs (Southbound)",,0.000000,0.000000,fhrs
+566436,"Moto Petrol Station Including Greggs (Southbound)","NG9 3QQ",52.957447,-1.263361,fhrs
 1205196,"Moto Southwaite Greggs","CA4 0NT",54.797962,-2.872196,fhrs
 1380422,"Newby Bridge Services - Greggs","LA12 8ND",54.266705,-2.965515,fhrs
 1400474,"Peterhead Greggs","AB42 3GT",57.485928,-1.803263,fhrs
