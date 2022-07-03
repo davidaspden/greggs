@@ -27,4 +27,5 @@ jobs:
       - name: Run a multi-line script
         run: |
           mkdir dev
+          cd dev
           echo -n "<h1>Dev Runner<h1>" > index.htm
