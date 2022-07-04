@@ -1,10 +1,8 @@
 # This is a basic workflow to help you get started with Actions
 
-name: 'Dev subdir build for dev branch'
-
-
-description: 'This action will make the dev branch available at /dev off of root'
-author: 'David Aspden david.aspden@gmail.com'
+name: Dev subdir build for dev branch
+#description: 'This action will make the dev branch available at /dev off of root'
+#author: 'David Aspden david.aspden@gmail.com'
 
 # Controls when the workflow will run
 on:
@@ -26,7 +24,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-        ref: master
+        with:
+          ref: master
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
