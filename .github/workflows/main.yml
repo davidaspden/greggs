@@ -31,7 +31,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           mkdir dev
-          cp $GITHUB_WORKSPACE /dev
+          cp -r $GITHUB_WORKSPACE /dev
           cd dev
           echo -n '<h1>Dev Runner<h1>' > debug.htm
       - name: Deploy
