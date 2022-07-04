@@ -28,4 +28,8 @@ jobs:
         run: |
           mkdir dev
           cd dev
-          echo -n "<h1>Dev Runner<h1>" > index.htm
+          echo -n '<h1>Dev Runner<h1>' > index.htm
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dev # The folder the action should deploy.
